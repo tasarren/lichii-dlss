@@ -1,0 +1,8 @@
+# Build the module into ./out with: docker compose -f externals/lichii-dlss/compose.yaml run --rm build
+name: lichii-dlss
+services:
+  build:
+    build: .
+    volumes:
+      - ./out:/out
+    command: sh -c 'cp /artifacts/lichii-dlss-module.so /artifacts/LICENSE /artifacts/NVIDIA-LICENSE.txt /out/'

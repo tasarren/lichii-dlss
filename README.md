@@ -1,5 +1,7 @@
 # Lichii DLSS module
 
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/tasarren)
+
 A small shared library that lets [Lichii](https://github.com/tasarren/Lichii)
 use NVIDIA DLSS Super Resolution on Linux through the NGX Vulkan API. Lichii
 loads it at runtime from its user data directory (`ngx/`); it is never bundled
@@ -59,3 +61,7 @@ cmake --build build
 - glibc 2.35 or newer (Ubuntu 22.04 era). The Docker build pins that base on
   purpose: a module built on a newer distro silently fails to load on older
   ones.
+
+## Support
+
+Tip on [Ko-fi](https://ko-fi.com/tasarren) or sponsor [@tasarren on GitHub](https://github.com/sponsors/tasarren). Both help keep this project moving.

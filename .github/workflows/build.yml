@@ -5,6 +5,11 @@ name: build
 on:
   push:
     branches: [main, next]
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
+      - '.github/FUNDING.yml'
+      - 'LICENSE'
   workflow_dispatch:
 
 permissions:
